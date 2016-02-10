@@ -1,0 +1,164 @@
+* {
+	font-family: Helvetica, Arial, sans-serif;
+    color: rgb(0,0,0);
+    text-align: left;
+}
+
+h1 {
+    font-size: 2em;
+    color: rgb(255,255,255) !important;
+    text-align: center;
+}
+
+.reading-dog {
+    background-image: url(reading_dog.jpg);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: rgb(185,85,25);
+}
+
+main a:link, main a:visited, main a:active {
+    color: rgb(0,0,255);
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+header {
+	background-color: rgb(100,100,100); 
+	width: 100%;
+	padding: 0.5em;
+}
+
+main {
+    background-color: rgb(220,220,220);
+    padding: 0.5em;
+}
+
+body {
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    main, nav{
+        width: 100%;
+    }
+
+    main {
+        order: 2;
+    }
+
+    nav {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        flex: 1;
+        order: 2;
+    }
+
+    main {
+        flex: 3;
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }   
+}
+
+#section-quoteoftheday blockquote p {
+    font-style: italic;
+}
+
+table, th, td, tr {
+    border-collapse: collapse;
+    border: 1px solid rgb(184,204,228);
+    padding: 0.5em;
+}
+
+thead th {
+    background: linear-gradient(180deg, rgb(100,100,100), rgb(0,0,0));
+    color: rgb(255,255,255);    
+    padding: 0.5em;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(197,217,241);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(255,255,255);
+}
+
+tbody td:nth-child(3), tbody td:nth-child(4) {
+    text-align: right;
+}
+
+tbody tr {
+	transition: background-color 1s;
+	transition-timing-function: ease;
+}
+
+tbody tr:hover {
+    background-color: rgb(255,255,0);
+}
+
+#section-contact div {
+    padding: 0.5em;
+}
+
+input[type="submit"], input[type="reset"] {
+	background-color: rgb(100,100,100);
+    color: rgb(255,255,255);
+    padding: 0.5em; 
+}
+
+.required {
+    color: rgb(255,0,0);
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(100,100,100);
+    color: rgb(255,255,255);
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav {
+    background-color: rgb(180,180,180);
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0.5em;
+}
+
+nav a:link, nav a:visited {
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+nav a:hover {
+    color: rgb(255,255,255);
+    text-decoration: underline;
+}
