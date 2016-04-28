@@ -1,0 +1,42 @@
+#title {
+	text-align: center;
+}
+
+#drop-down {
+	padding: 15px;
+}
+
+#breed-name {
+	margin-left: 0.6em;
+}
+
+h3 {
+	color: rgb(70, 130, 180);
+}
+
+#content_left {
+	display: block;
+	float: left;
+	width: calc(50% - 2em);
+	margin-left: 1em;
+}
+
+.content_right {
+	display: inline-block;
+	float: right;
+	width: calc(50% - 2em);
+	position:relative; height:300px; width:500px;
+	overflow: hidden;
+}
+
+.content_right img {
+	position:absolute; 
+	left:0; 
+	top:0; 
+	transition:opacity 2s; 
+	opacity:1; 
+}
+
+.content_right img.is-hidden { 
+	opacity:0; 
+}

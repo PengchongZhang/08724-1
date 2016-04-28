@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        <tr ng-repeat="address in contacts track by $index">
+            <td>
+                <button type="button" ng-click="remove(address.index, $index)"> X </button>
+            </td>
+            <td>
+                <div ng-click="redirect(address.index)" style="color: blue; text-decoration: underline;">
+                    {{address.firstName}}  {{address.lastName}}
+                </div>
+            </td>
+            <td>
+                {{address.email}}
+            </td>
+            <td>
+                {{address.phone}}
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <button ng-click="add('/contact')">Add Contact</button>
+</body>
+</html>
